@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Today from './components/Today'
+import History from './components/History'
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
 				</div>
 				<div className="restuls--section__inner">
 					<Today />
+					<History />
 				</div>
 			</section>
 		</div>
