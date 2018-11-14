@@ -13,10 +13,6 @@ export default class History extends Component {
       threeDaysPrice: {},
       fourDaysPrice: {}
     }
-    // this.getETHPrices = this.getETHPrices.bind(this);
-    // this.getBTCPrices = this.getBTCPrices.bind(this);
-    // this.getLTCPrices = this.getLTCPrices.bind(this);
-    
   }
 
   getETHPrices(date) {

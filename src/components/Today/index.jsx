@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './index.css';
 import axios from 'axios';
+import Pusher from 'pusher-js';
 
 
 export default class Today extends Component {
@@ -23,6 +24,12 @@ export default class Today extends Component {
             .catch(error => {
                 console.log(error);
             })
+
+        this.pusher = new Pusher(process.env.APP_KEY, {
+            cluster: process.env.CLUSTER,
+            encrypted: true
+        })
+        this.prices = this.pusher.subscribe('coin-prices');
     }
 
   render(){
