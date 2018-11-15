@@ -3,7 +3,6 @@ import './App.css';
 import Today from './components/Today'
 import History from './components/History'
 
-
 class App extends Component {
   render() {
     return (
