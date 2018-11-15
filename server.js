@@ -7,10 +7,10 @@ require('dotenv').config();
 
 
 const pusher = new Pusher({
-  appId: process.env.APP_ID,
-  key: process.env.KEY,
-  secret: process.env.SECRET,
-  cluster: process.env.CLUSTER,
+  appId: process.env.REACT_APP_APP_ID,
+  key: process.env.REACT_APP_KEY,
+  secret: process.env.REACT_APP_SECRET,
+  cluster: process.env.REACT_APP_CLUSTER,
   encrypted: true
 })
 
@@ -41,3 +41,4 @@ app.post('/prices/new', (req, res) => {
 app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'))
 })
+
